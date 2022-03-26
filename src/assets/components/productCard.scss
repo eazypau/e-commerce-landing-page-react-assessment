@@ -1,0 +1,14 @@
+.productCardContainer {
+	@apply cursor-pointer;
+	
+	div {
+		@apply py-2;
+
+		h4 {
+			@apply text-sm sm:text-base w-full truncate;
+		}
+		p {
+			@apply font-medium;
+		}
+	}
+}

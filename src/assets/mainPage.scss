@@ -1,0 +1,24 @@
+.navBar {
+	@apply bg-pink-500 sticky top-0 z-10 sm:flex justify-between items-center py-4 px-3 sm:px-10 lg:px-20 xl:px-40 2xl:px-52;
+
+	div {
+		h2 {
+			@apply text-2xl font-bold text-white;
+		}
+	}
+	div {
+		@apply sm:flex sm:space-x-2 space-y-2;
+
+		.sortBox {
+			@apply flex items-center space-x-2;
+
+			label {
+				@apply text-white font-medium pt-2;
+			}
+		}
+	}
+}
+
+.productGrid {
+	@apply sm:py-6 px-1 sm:px-3 lg:px-10 xl:px-40 2xl:px-52 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 2xl:grid-cols-5 gap-x-4 md:gap-x-6 md:gap-y-8;
+}

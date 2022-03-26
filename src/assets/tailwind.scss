@@ -1,0 +1,19 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+// for component styling
+@import "./components/imageContainer.scss";
+@import "./components/loading.scss";
+@import "./components/textInput.scss";
+@import "./components/sortDropDown.scss";
+@import "./components/productCard.scss";
+
+// for page styling
+@import "./mainPage.scss";
+
+// for utilities
+@import "./utilities.scss";
+
+// reference:
+// https://www.elian.codes/blog/writing-your-own-components-with-tailwind-sass/

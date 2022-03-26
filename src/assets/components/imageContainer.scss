@@ -1,0 +1,7 @@
+.imageContainer {
+	@apply w-full flex justify-center items-center rounded-md shadow overflow-hidden relative z-0;
+
+	img {
+		@apply w-full h-auto object-cover object-center hover:scale-125 transition duration-200;
+	}
+}

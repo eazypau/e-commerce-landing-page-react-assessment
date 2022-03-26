@@ -1,0 +1,6 @@
+@import "../utilities.scss";
+
+input[type="text"] {
+	@apply rounded w-full h-max p-1 outline-none;
+	@include focusPink;
+}

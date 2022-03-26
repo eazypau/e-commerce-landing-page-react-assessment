@@ -1,0 +1,6 @@
+@import "../utilities.scss";
+
+select {
+	@apply flex-1 h-8 p-1 rounded text-sm outline-none;
+	@include focusPink;
+}
