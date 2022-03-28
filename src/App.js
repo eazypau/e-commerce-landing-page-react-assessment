@@ -12,12 +12,29 @@ function App() {
 	const [filterTextInput, setFilterTextInput] = useState("");
 	const [sortOption, setSortOption] = useState("alphabetAscending");
 
+	const rgexAlphabets = /[^a-zA-Z]/g;
 	const sortByOption = {
 		alphabetAscending: (a, b) => {
-			return a.title.localeCompare(b.title);
+			const productNameOne = a.title.replace(rgexAlphabets, "");
+			const productNameTwo = b.title.replace(rgexAlphabets, "");
+			if (productNameOne < productNameTwo) {
+				return -1;
+			}
+			if (productNameOne > productNameTwo) {
+				return 1;
+			}
+			return 0;
 		},
 		alphabetDescending: (a, b) => {
-			return b.title.localeCompare(a.title);
+			const productNameOne = a.title.replace(rgexAlphabets, "");
+			const productNameTwo = b.title.replace(rgexAlphabets, "");
+			if (productNameOne < productNameTwo) {
+				return 1;
+			}
+			if (productNameOne > productNameTwo) {
+				return -1;
+			}
+			return 0;
 		},
 		priceAscending: (a, b) => {
 			return a.price - b.price;
@@ -39,16 +56,20 @@ function App() {
 		setFilterTextInput(newInput);
 	};
 
-  const updateSortOption = (selectedSortOption) => {
-    setSortOption(selectedSortOption)
-  }
+	const updateSortOption = (selectedSortOption) => {
+		setSortOption(selectedSortOption);
+	};
 
 	return (
 		<div className="App">
 			<nav className="navBar">
-				<div style={{display: "flex"}}>
+				<div style={{ display: "flex" }}>
 					{/* <h2>RomanticVal</h2> */}
-					<img src={process.env.PUBLIC_URL + '/logo192.png'} alt="company logo" className="companyLogo" />
+					<img
+						src={process.env.PUBLIC_URL + "/logo192.png"}
+						alt="company logo"
+						className="companyLogo"
+					/>
 					<span>Flowery Project</span>
 				</div>
 				<div>

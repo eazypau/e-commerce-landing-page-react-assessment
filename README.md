@@ -30,3 +30,4 @@ $ npm run build
 - [How to check if image exists](https://www.reddit.com/r/reactjs/comments/l2yz8h/how_to_check_if_image_exists/)
 - [Sort Array](https://stackoverflow.com/questions/6712034/sort-array-by-firstname-alphabetically-in-javascript)
 - [React interactivity: Editing, filtering, conditional rendering](https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Client-side_JavaScript_frameworks/React_interactivity_filtering_conditional_rendering)
+- [Sort mixed alpha/numetic array](https://stackoverflow.com/questions/4340227/sort-mixed-alpha-numeric-array)
