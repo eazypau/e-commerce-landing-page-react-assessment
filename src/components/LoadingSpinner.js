@@ -9,5 +9,3 @@ export default function LoadingSpinner() {
 		</div>
 	);
 }
-
-// https://cssfx.netlify.app/

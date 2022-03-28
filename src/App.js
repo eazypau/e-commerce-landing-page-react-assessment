@@ -46,8 +46,10 @@ function App() {
 	return (
 		<div className="App">
 			<nav className="navBar">
-				<div>
-					<h2>RomanticVal</h2>
+				<div style={{display: "flex"}}>
+					{/* <h2>RomanticVal</h2> */}
+					<img src={process.env.PUBLIC_URL + '/logo192.png'} alt="company logo" className="companyLogo" />
+					<span>Flowery Project</span>
 				</div>
 				<div>
 					<div className="sortBox">

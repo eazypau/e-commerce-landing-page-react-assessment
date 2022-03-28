@@ -2,6 +2,14 @@
 	@apply bg-pink-500 sticky top-0 z-10 sm:flex justify-between items-center py-4 px-3 sm:px-10 lg:px-20 xl:px-40 2xl:px-52;
 
 	div {
+		.companyLogo {
+			@apply w-10 h-10;
+		}
+		span {
+			@apply text-white text-lg font-bold ml-2;
+		}
+	}
+	div {
 		h2 {
 			@apply text-2xl font-bold text-white;
 		}
